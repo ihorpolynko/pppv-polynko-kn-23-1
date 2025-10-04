@@ -1,0 +1,27 @@
+﻿<Window x:Class="QuizApp.Views.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Адмін-панель" Height="500" Width="800" Closing="Window_Closing">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Вікторини" FontWeight="Bold"/>
+            <ListBox Name="QuizListBox" Height="300" DisplayMemberPath="Title" SelectionChanged="QuizListBox_SelectionChanged"/>
+            <Button Click="BtnAddQuiz_Click" Margin="0,4,0,0">Додати викторину</Button>
+            <Button Click="BtnEditQuiz_Click" Margin="0,4,0,0">Редагувати</Button>
+            <Button Click="BtnDeleteQuiz_Click" Margin="0,4,0,0">Видалити</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Питання" FontWeight="Bold"/>
+            <ListBox Name="QuestionListBox" Height="300" DisplayMemberPath="Text"/>
+            <Button Click="BtnAddQuestion_Click" Margin="0,4,0,0">Додати питання</Button>
+            <Button Click="BtnEditQuestion_Click" Margin="0,4,0,0">Редагувати</Button>
+            <Button Click="BtnDeleteQuestion_Click" Margin="0,4,0,0">Видалити</Button>
+        </StackPanel>
+    </Grid>
+</Window>
