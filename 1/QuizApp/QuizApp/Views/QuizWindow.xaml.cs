@@ -54,6 +54,7 @@ namespace QuizApp.Views
         private void RenderQuestion()
         {
             QuestionArea.Children.Clear();
+
             if (_questions == null || !_questions.Any())
             {
                 QuestionArea.Children.Add(new TextBlock { Text = "Питань нема.", FontWeight = FontWeights.Bold });
