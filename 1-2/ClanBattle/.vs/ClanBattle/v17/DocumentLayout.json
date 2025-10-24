@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\services\\clangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\services\\clangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\services\\combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\services\\combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\factories\\iclanfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\factories\\iclanfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\clans\\clan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\clans\\clan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\factories\\randomclanfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\factories\\randomclanfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\clans\\clanleadermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\clans\\clanleadermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\models\\iunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\models\\iunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\models\\unitbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\models\\unitbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-2\\clanbattle\\clanbattle\\models\\elf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\models\\elf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Program.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Program.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Program.cs",
+              "RelativeToolTip": "ClanBattle\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:45:07.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Combat.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Services\\Combat.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Services\\Combat.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Services\\Combat.cs",
+              "RelativeToolTip": "ClanBattle\\Services\\Combat.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:43:46.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClanGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Services\\ClanGenerator.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Services\\ClanGenerator.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Services\\ClanGenerator.cs",
+              "RelativeToolTip": "ClanBattle\\Services\\ClanGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:43:10.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IClanFactory.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Factories\\IClanFactory.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Factories\\IClanFactory.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Factories\\IClanFactory.cs",
+              "RelativeToolTip": "ClanBattle\\Factories\\IClanFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:43:03.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RandomClanFactory.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Factories\\RandomClanFactory.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Factories\\RandomClanFactory.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Factories\\RandomClanFactory.cs",
+              "RelativeToolTip": "ClanBattle\\Factories\\RandomClanFactory.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAC8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:42:09.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Clan.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Clans\\Clan.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Clans\\Clan.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Clans\\Clan.cs",
+              "RelativeToolTip": "ClanBattle\\Clans\\Clan.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:41:34.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClanLeaderManager.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Clans\\ClanLeaderManager.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Clans\\ClanLeaderManager.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Clans\\ClanLeaderManager.cs",
+              "RelativeToolTip": "ClanBattle\\Clans\\ClanLeaderManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:41:01.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUnit.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\IUnit.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Models\\IUnit.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\IUnit.cs",
+              "RelativeToolTip": "ClanBattle\\Models\\IUnit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:40:49.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitBase.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\UnitBase.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Models\\UnitBase.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\UnitBase.cs",
+              "RelativeToolTip": "ClanBattle\\Models\\UnitBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:40:26.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Elf.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\Elf.cs",
+              "RelativeDocumentMoniker": "ClanBattle\\Models\\Elf.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-2\\ClanBattle\\ClanBattle\\Models\\Elf.cs",
+              "RelativeToolTip": "ClanBattle\\Models\\Elf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:39:42.714Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

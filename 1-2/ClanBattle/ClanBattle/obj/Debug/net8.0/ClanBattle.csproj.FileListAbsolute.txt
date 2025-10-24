@@ -1,0 +1,15 @@
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\bin\Debug\net8.0\ClanBattle.exe
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\bin\Debug\net8.0\ClanBattle.deps.json
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\bin\Debug\net8.0\ClanBattle.runtimeconfig.json
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\bin\Debug\net8.0\ClanBattle.dll
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\bin\Debug\net8.0\ClanBattle.pdb
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.AssemblyInfoInputs.cache
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.AssemblyInfo.cs
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.csproj.CoreCompileInputs.cache
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.sourcelink.json
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.dll
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\refint\ClanBattle.dll
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.pdb
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ClanBattle.genruntimeconfig.cache
+C:\Users\RoRHaT\Documents\GitHub\pppv-polynko-kn-23-1\1-2\ClanBattle\ClanBattle\obj\Debug\net8.0\ref\ClanBattle.dll
