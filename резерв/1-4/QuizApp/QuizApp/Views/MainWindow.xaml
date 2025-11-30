@@ -1,0 +1,27 @@
+﻿<Window x:Class="QuizApp.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Головне меню" Height="420" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock Name="WelcomeText" FontWeight="Bold" FontSize="14"/>
+            <Button Click="BtnStartQuiz_Click" Margin="0,10,0,0" Height="40">Старт нової вікторини</Button>
+            <Button Click="BtnResults_Click" Margin="0,6,0,0" Height="40">Подивитися мої результати</Button>
+            <Button Click="BtnTop20_Click" Margin="0,6,0,0" Height="40">Топ-20 по викторині</Button>
+            <Button Click="BtnSettings_Click" Margin="0,6,0,0" Height="40">Змінити пароль / дату нарождения</Button>
+            <Button Click="BtnLogout_Click" Margin="0,30,0,0" Height="40">Вихід</Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Доступні вікторини:" FontWeight="Bold" Margin="0,0,0,8"/>
+            <ListBox Name="QuizListBox" DisplayMemberPath="Title" Height="250"/>
+            <CheckBox Name="MixedQuizCheck" Content="Змішана вікторина" Margin="0,8,0,0"/>
+            <Button Click="BtnOpenQuiz_Click" HorizontalAlignment="Left" Width="140" Margin="0,8,0,0" Height="32">Обрати і старт</Button>
+        </StackPanel>
+    </Grid>
+</Window>
