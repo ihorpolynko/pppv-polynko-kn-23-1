@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-6\\clanbattle\\clanbattle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-6\\clanbattle\\clanbattle\\clans\\clan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\clans\\clan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-6\\clanbattle\\clanbattle\\memento\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{224E66A2-0919-40E1-B2AC-B07486EE5F76}|ClanBattle\\ClanBattle.csproj|solutionrelative:clanbattle\\memento\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,45 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CheckpointManager.cs",
-              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Memento\\CheckpointManager.cs",
-              "RelativeDocumentMoniker": "ClanBattle\\Memento\\CheckpointManager.cs",
-              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Memento\\CheckpointManager.cs",
-              "RelativeToolTip": "ClanBattle\\Memento\\CheckpointManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T21:34:44.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Program.cs",
-              "RelativeDocumentMoniker": "ClanBattle\\Program.cs",
-              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Program.cs",
-              "RelativeToolTip": "ClanBattle\\Program.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAowJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T18:54:35.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Clan.cs",
-              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Clans\\Clan.cs",
-              "RelativeDocumentMoniker": "ClanBattle\\Clans\\Clan.cs",
-              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\ClanBattle\\ClanBattle\\Clans\\Clan.cs",
-              "RelativeToolTip": "ClanBattle\\Clans\\Clan.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAswF4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T18:24:47.264Z",
-              "EditorCaption": ""
             }
           ]
         }

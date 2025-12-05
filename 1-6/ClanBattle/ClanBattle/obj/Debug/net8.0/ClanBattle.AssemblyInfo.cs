@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClanBattle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ba83a7964e3897772b63b1fe27bcf34c694cb4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10f35c51e23f05d0be3b2a7e30cf5fa668c78564")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClanBattle")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClanBattle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
