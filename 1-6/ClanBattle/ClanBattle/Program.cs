@@ -19,16 +19,21 @@ namespace ClanBattle
             var combat = new CombatService();
             var checkpoint = new CheckpointManager();
 
+            List<Clan> clans = null;
+
             while (true)
             {
-                var clan1 = generator.GenerateClan(generator.GenerateRandomClanName());
-                var clan2 = generator.GenerateClan(generator.GenerateRandomClanName());
-                var clans = new List<Clan> { clan1, clan2 };
+                if (clans == null) // новая игра
+                {
+                    var clan1 = generator.GenerateClan(generator.GenerateRandomClanName());
+                    var clan2 = generator.GenerateClan(generator.GenerateRandomClanName());
+                    clans = new List<Clan> { clan1, clan2 };
+                }
 
                 ClanMediator mediator = CreateAndRegisterMediator(clans);
 
-                clan1.Display();
-                clan2.Display();
+                foreach (var clan in clans)
+                    clan.Display();
 
                 const string mainMenu = "\nМеню: (S)ave чекпоінт, (L)ist чекпоінтів, (R)estore чекпоінт, (C)ommands (лідери), (B)attle, (Q)uit";
 
@@ -38,6 +43,7 @@ namespace ClanBattle
                     Console.WriteLine(mainMenu);
                     Console.Write("\nОберіть дію: ");
                     var key = Console.ReadKey(true).Key;
+
                     if (key == ConsoleKey.S)
                     {
                         int id = checkpoint.Save(clans);
@@ -58,11 +64,12 @@ namespace ClanBattle
                         Console.Write("\nВведіть id для відновлення: ");
                         if (int.TryParse(Console.ReadLine(), out int id))
                         {
-                            bool ok = checkpoint.Restore(clans, id);
-                            if (ok)
+                            var restored = checkpoint.Restore(id, resetForBattle: true);
+                            if (restored != null)
                             {
+                                clans = restored;
                                 mediator = CreateAndRegisterMediator(clans);
-                                Console.WriteLine($"Відновлення стану з чекпоінта {id}.");
+                                Console.WriteLine($"Відновлення стану з чекпоінта {id}.\n");
                                 foreach (var c in clans) c.Display();
                             }
                             else
@@ -72,31 +79,31 @@ namespace ClanBattle
                         }
                         else
                         {
-                            Console.WriteLine("Неправильний ввод.");
+                            Console.WriteLine("Неправильнe введення.");
                         }
                     }
                     else if (key == ConsoleKey.C)
                     {
-                        Console.WriteLine($"\nКоманда від лідера першого клану ({clan1.Leader.Name}):");
-                        mediator.SendRandomCommand(clan1.Name);
+                        Console.WriteLine($"\nКоманда від лідера першого клану ({clans[0].Leader.Name}):");
+                        mediator.SendRandomCommand(clans[0].Name);
 
-                        Console.WriteLine($"\nКоманда від лідера другого клану ({clan2.Leader.Name}):");
-                        mediator.SendRandomCommand(clan2.Name);
+                        Console.WriteLine($"\nКоманда від лідера другого клану ({clans[1].Leader.Name}):");
+                        mediator.SendRandomCommand(clans[1].Name);
                     }
                     else if (key == ConsoleKey.B)
                     {
                         Console.WriteLine("\nЗапуск бою...");
-                        combat.Battle(clan1, clan2);
+                        combat.Battle(clans[0], clans[1]);
 
                         var continueGame = PostBattleMenu(clans, checkpoint, ref mediator);
-                        if (!continueGame) // користувач обирає вихід
+                        if (!continueGame)
                         {
                             exitApp = true;
                             break;
                         }
                         else
                         {
-                            // користувач обирає "Нова игра"
+                            clans = null; // нова гра --> обнуляємо клани
                             break;
                         }
                     }
@@ -127,15 +134,13 @@ namespace ClanBattle
                 Console.WriteLine(postMenu);
                 Console.Write("\nОберіть дію: ");
                 var key = Console.ReadKey(true).Key;
-                
+
                 if (key == ConsoleKey.N)
                 {
-                    // Нова гра
                     return true;
                 }
                 else if (key == ConsoleKey.Q)
                 {
-                    // Вийти
                     return false;
                 }
                 else

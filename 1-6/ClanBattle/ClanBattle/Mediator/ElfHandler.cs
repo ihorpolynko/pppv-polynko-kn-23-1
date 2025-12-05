@@ -78,9 +78,22 @@ namespace ClanBattle.Mediator
                         break;
                     }
 
-                    var target = Opponents.Where(e => e.Health > 0).OrderBy(_ => _rnd.Next()).First();
+                    var target = Opponents.Where(e => e.Health > 0)
+                                          .OrderBy(_ => _rnd.Next())
+                                          .First();
+
+                    double damageMod = unit.DamageModifier();
+                    double defenseMod = target.DefenseModifier();
+                    double dodgeMod = target.DodgeModifier();
+
+                    if (_rnd.NextDouble() < 0.10 * dodgeMod)
+                    {
+                        Console.WriteLine($"{target.Name} ухилився від атаки!");
+                        break;
+                    }
 
                     int baseDamage = _rnd.Next(8, 26);
+
                     double weaponMultiplier = unit.Weapon switch
                     {
                         "Sword" => 1.0,
@@ -88,7 +101,9 @@ namespace ClanBattle.Mediator
                         "Axe" => 1.2,
                         _ => 1.0
                     };
-                    int totalDamage = (int)(baseDamage * weaponMultiplier);
+
+                    double rawDamage = baseDamage * weaponMultiplier * damageMod / defenseMod;
+                    int totalDamage = Math.Max(1, (int)rawDamage);
 
                     target.Health -= totalDamage;
                     if (target.Health < 0) target.Health = 0;
@@ -102,7 +117,9 @@ namespace ClanBattle.Mediator
                     }
 
                     var tpos = UnwrapUnitBase(target);
-                    Console.WriteLine($"{unit.Name} атакує {target.Name} ({totalDamage} dmg) | Здоров'я {target.Name}: {target.Health} | Позиція: ({pos.X},{pos.Y}) -> ({tpos?.X ?? 0},{tpos?.Y ?? 0})");
+                    Console.WriteLine($"{unit.Name} атакує {target.Name} ({totalDamage} dmg) | " +
+                                      $"Здоров'я {target.Name}: {target.Health} | " +
+                                      $"Позиція: ({pos.X},{pos.Y}) -> ({tpos?.X ?? 0},{tpos?.Y ?? 0})");
                     break;
             }
         }

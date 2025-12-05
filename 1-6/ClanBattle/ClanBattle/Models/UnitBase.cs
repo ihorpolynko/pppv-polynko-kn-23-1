@@ -11,6 +11,7 @@ namespace ClanBattle.Models
 
     public abstract class UnitBase : IUnit
     {
+        public Guid Id { get; } = Guid.NewGuid();
         public string Name { get; set; }
         public string Weapon { get; set; }
         public string MoveType { get; set; }
@@ -21,7 +22,21 @@ namespace ClanBattle.Models
         public int HitsTaken { get; private set; } = 0;
         public UnitStatus Status { get; private set; } = UnitStatus.Active;
 
-        public abstract IUnit Clone();
+        public virtual IUnit Clone()
+        {
+            return (UnitBase)this.MemberwiseClone();
+        }
+
+        public IUnit CloneForBattle()
+        {
+            var clone = (UnitBase)this.MemberwiseClone();
+            clone.HitsTaken = 0;
+            clone.Status = UnitStatus.Active;
+            clone.Health = GetBaseHealth();
+            return clone;
+        }
+
+        protected virtual int GetBaseHealth() => Health;
 
         public void ReceiveHit(int damage = 20)
         {
@@ -51,6 +66,10 @@ namespace ClanBattle.Models
                 Health += healAmount;
             }
         }
+
+        public virtual double DamageModifier() => 1.0;
+        public virtual double DefenseModifier() => 1.0;
+        public virtual double DodgeModifier() => 1.0;
 
         public virtual void Display()
         {

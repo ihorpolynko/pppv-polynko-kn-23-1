@@ -11,13 +11,13 @@ namespace ClanBattle.Decorators
             _unit = unit;
         }
 
+        public Guid Id => _unit.Id;
         public string Name { get => _unit.Name; set => _unit.Name = value; }
         public string Weapon { get => _unit.Weapon; set => _unit.Weapon = value; }
         public string MoveType { get => _unit.MoveType; set => _unit.MoveType = value; }
         public int Health { get => _unit.Health; set => _unit.Health = value; }
-
-        public int X { get => (_unit as UnitBase).X; set => (_unit as UnitBase).X = value; }
-        public int Y { get => (_unit as UnitBase).Y; set => (_unit as UnitBase).Y = value; }
+        public int X { get => (_unit as UnitBase)?.X ?? 0; set { if (_unit is UnitBase b) b.X = value; } }
+        public int Y { get => (_unit as UnitBase)?.Y ?? 0; set { if (_unit is UnitBase b) b.Y = value; } }
 
         public virtual IUnit Clone() => _unit.Clone();
 

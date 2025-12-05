@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-3\\Calculator\\",
+  "WorkspaceRootPath": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\Calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEB70A50-E40E-4773-BC63-7988907E01B3}|Calculator\\Calculator.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-3\\calculator\\calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEB70A50-E40E-4773-BC63-7988907E01B3}|Calculator\\Calculator.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-6\\calculator\\calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB70A50-E40E-4773-BC63-7988907E01B3}|Calculator\\Calculator.csproj|solutionrelative:calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB70A50-E40E-4773-BC63-7988907E01B3}|Calculator\\Calculator.csproj|c:\\users\\rorhat\\documents\\github\\pppv-polynko-kn-23-1\\1-6\\calculator\\calculator\\lightcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB70A50-E40E-4773-BC63-7988907E01B3}|Calculator\\Calculator.csproj|solutionrelative:calculator\\lightcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +30,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LightCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\Calculator\\Calculator\\LightCalculator.cs",
+              "RelativeDocumentMoniker": "Calculator\\LightCalculator.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\Calculator\\Calculator\\LightCalculator.cs",
+              "RelativeToolTip": "Calculator\\LightCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T21:38:44.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-3\\Calculator\\Calculator\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\Calculator\\Calculator\\Program.cs",
               "RelativeDocumentMoniker": "Calculator\\Program.cs",
-              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-3\\Calculator\\Calculator\\Program.cs",
+              "ToolTip": "C:\\Users\\RoRHaT\\Documents\\GitHub\\pppv-polynko-kn-23-1\\1-6\\Calculator\\Calculator\\Program.cs",
               "RelativeToolTip": "Calculator\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwD0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T20:06:47.569Z",
               "EditorCaption": ""

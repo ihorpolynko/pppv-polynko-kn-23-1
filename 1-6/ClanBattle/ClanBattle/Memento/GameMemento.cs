@@ -1,17 +1,15 @@
 using System.Collections.Generic;
-using ClanBattle.Models;
+using ClanBattle.Clans;
 
 namespace ClanBattle.Memento
 {
     public class GameMemento
     {
-        public IDictionary<string, List<IUnit>> ClanUnits { get; }
-        public IDictionary<string, IUnit?> Leaders { get; }
+        public List<Clan> ClansSnapshot { get; }
 
-        public GameMemento(IDictionary<string, List<IUnit>> clanUnits, IDictionary<string, IUnit?> leaders)
+        public GameMemento(List<Clan> clans)
         {
-            ClanUnits = clanUnits;
-            Leaders = leaders;
+            ClansSnapshot = clans;
         }
     }
 }

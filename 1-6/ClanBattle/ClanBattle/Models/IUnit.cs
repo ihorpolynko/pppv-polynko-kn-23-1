@@ -8,11 +8,16 @@ namespace ClanBattle.Models
 {
     public interface IUnit
     {
+        Guid Id { get; }
         string Name { get; set; }
         string Weapon { get; set; }
         string MoveType { get; set; }
         int Health { get; set; }
         IUnit Clone(); // для Prototype
         void Display();
+
+        double DamageModifier();
+        double DefenseModifier();
+        double DodgeModifier();
     }
 }

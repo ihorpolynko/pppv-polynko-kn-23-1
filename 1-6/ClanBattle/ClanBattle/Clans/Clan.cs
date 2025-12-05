@@ -19,6 +19,7 @@ namespace ClanBattle.Clans
             _factory = factory;
         }
 
+           
         public void GenerateRandomUnits()
         {
             int warriorCount = _rnd.Next(1, 5);
@@ -91,8 +92,7 @@ namespace ClanBattle.Clans
         // memento
         public void RestoreFromSnapshot(List<IUnit> unitsSnapshot, IUnit? leaderSnapshot)
         {
-            Units = new List<IUnit>(unitsSnapshot);
-
+            Units = unitsSnapshot;
             Leader = leaderSnapshot;
             ClanLeaderManager.Instance.SetLeader(Name, Leader);
         }

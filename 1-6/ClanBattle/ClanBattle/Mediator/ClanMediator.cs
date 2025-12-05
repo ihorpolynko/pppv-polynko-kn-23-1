@@ -46,46 +46,11 @@ namespace ClanBattle.Mediator
             }
         }
 
-        public void SendCommand(string clanName, string command)
-        {
-            var entry = _registered.FirstOrDefault(e => e.Name == clanName);
-            if (entry != null)
-                entry.Warrior.HandleCommand(command);
-        }
-
         public void SendRandomCommand(string clanName)
         {
             var entry = _registered.FirstOrDefault(e => e.Name == clanName);
             if (entry != null)
                 entry.Warrior.HandleRandomized();
-        }
-
-        public void SendCommandToSquad(string clanName, SquadType squad, string command)
-        {
-            var entry = _registered.FirstOrDefault(e => e.Name == clanName);
-            if (entry == null) return;
-
-            switch (squad)
-            {
-                case SquadType.Warriors:
-                    entry.Warrior.HandleCommand(command);
-                    break;
-                case SquadType.Elves:
-                    entry.Elf.HandleCommand(command);
-                    break;
-                case SquadType.Dwarves:
-                    entry.Dwarf.HandleCommand(command);
-                    break;
-                case SquadType.All:
-                    entry.Warrior.HandleCommand(command);
-                    break;
-            }
-        }
-
-        public void Broadcast(string command)
-        {
-            foreach (var entry in _registered)
-                entry.Warrior.HandleCommand(command);
         }
     }
 }

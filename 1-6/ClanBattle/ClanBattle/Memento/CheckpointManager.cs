@@ -9,42 +9,45 @@ namespace ClanBattle.Memento
     {
         private readonly List<GameMemento> _snapshots = new();
 
-        public int Save(IEnumerable<Clan> clans)
+        public int Save(List<Clan> clans)
         {
-            var unitsMap = new Dictionary<string, List<IUnit>>();
-            var leadersMap = new Dictionary<string, IUnit?>();
-
+            var clones = new List<Clan>();
             foreach (var clan in clans)
             {
-                var clones = clan.Units.Select(u => u.Clone()).ToList();
-                unitsMap[clan.Name] = clones;
-
-                leadersMap[clan.Name] = clan.Leader?.Clone();
+                var clonedUnits = clan.Units.Select(u => u.Clone()).ToList();
+                var clonedLeader = clan.Leader?.Clone();
+                var cloneClan = new Clan(clan.Name, null);
+                cloneClan.RestoreFromSnapshot(clonedUnits, clonedLeader);
+                clones.Add(cloneClan);
             }
 
-            var m = new GameMemento(unitsMap, leadersMap);
-            _snapshots.Add(m);
+            _snapshots.Add(new GameMemento(clones));
             return _snapshots.Count - 1;
         }
 
-        public bool Restore(IEnumerable<Clan> clans, int id)
+        public List<Clan> Restore(int id, bool resetForBattle = false)
         {
-            if (id < 0 || id >= _snapshots.Count) return false;
-            var m = _snapshots[id];
+            if (id < 0 || id >= _snapshots.Count) return null;
 
-            foreach (var clan in clans)
+            var snapshot = _snapshots[id];
+            var restoredClans = new List<Clan>();
+
+            foreach (var clan in snapshot.ClansSnapshot)
             {
-                if (m.ClanUnits.TryGetValue(clan.Name, out var savedUnits))
-                {
-                    var unitsForRestore = savedUnits.Select(u => u.Clone()).ToList();
-                    m.Leaders.TryGetValue(clan.Name, out var savedLeader);
-                    var leaderForRestore = savedLeader?.Clone();
+                var clonedUnits = clan.Units.Select(u => resetForBattle && u is UnitBase ub
+                                                            ? ub.CloneForBattle()
+                                                            : u.Clone()).ToList();
+                var clonedLeader = resetForBattle && clan.Leader is UnitBase l
+                                    ? l.CloneForBattle()
+                                    : clan.Leader?.Clone();
 
-                    clan.RestoreFromSnapshot(unitsForRestore, leaderForRestore);
-                }
+                var newClan = new Clan(clan.Name, null);
+                newClan.RestoreFromSnapshot(clonedUnits, clonedLeader);
+
+                restoredClans.Add(newClan);
             }
 
-            return true;
+            return restoredClans;
         }
 
         public int SnapshotsCount => _snapshots.Count;

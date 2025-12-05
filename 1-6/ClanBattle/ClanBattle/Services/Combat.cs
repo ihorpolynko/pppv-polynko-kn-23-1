@@ -91,6 +91,10 @@ namespace ClanBattle.Services
         {
             int baseDamage = _rnd.Next(10, 31);
 
+            double damageMod = attacker.DamageModifier();
+            double defenseMod = defender.DefenseModifier();
+            double dodgeMod = defender.DodgeModifier();
+
             double weaponMultiplier = attacker.Weapon switch
             {
                 "Sword" => 1.2,
@@ -115,12 +119,15 @@ namespace ClanBattle.Services
             int defenderX = d?.X ?? 0;
             int defenderY = d?.Y ?? 0;
 
-            double positionAttackBonus = 1.0 + (5 - attackerY) * 0.05 + (Math.Abs(defenderX - attackerX) < 3 ? 0.05 : 0.0);
+            double positionAttackBonus =
+                1.0 + (5 - attackerY) * 0.05 + (Math.Abs(defenderX - attackerX) < 3 ? 0.05 : 0.0);
 
-            double positionDodgeMultiplier = 1.0 - (5 - defenderY) * 0.03 - (defenderX * 0.01);
+            double positionDodgeMultiplier =
+                1.0 - (5 - defenderY) * 0.03 - (defenderX * 0.01);
+
             positionDodgeMultiplier = Math.Max(0.0, positionDodgeMultiplier);
 
-            double dodgeChance = baseDodgeChance * positionDodgeMultiplier;
+            double dodgeChance = baseDodgeChance * positionDodgeMultiplier * dodgeMod;
 
             if (_rnd.NextDouble() < dodgeChance)
             {
@@ -128,7 +135,9 @@ namespace ClanBattle.Services
                 return;
             }
 
-            int totalDamage = (int)(baseDamage * weaponMultiplier * positionAttackBonus);
+            double rawDamage = baseDamage * weaponMultiplier * positionAttackBonus * damageMod / defenseMod;
+            int totalDamage = Math.Max(1, (int)rawDamage);
+
             if (d != null)
             {
                 d.Health -= totalDamage;
@@ -140,7 +149,9 @@ namespace ClanBattle.Services
                 if (defender.Health < 0) defender.Health = 0;
             }
 
-            Console.WriteLine($"{attacker.Name} атакує {defender.Name} ({totalDamage} dmg) | Здоров'я {defender.Name}: {(d?.Health ?? defender.Health)} | Позиція: ({attackerX},{attackerY} -> {defenderX},{defenderY})");
+            Console.WriteLine($"{attacker.Name} [{attacker.Weapon}] атакує {defender.Name} ({totalDamage} dmg) | " +
+                              $"Здоров'я {defender.Name}: {(d?.Health ?? defender.Health)} | " +
+                              $"Позиція: ({attackerX},{attackerY} -> {defenderX},{defenderY})");
         }
     }
 }
