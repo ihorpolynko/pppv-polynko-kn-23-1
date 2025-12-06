@@ -11,19 +11,6 @@ namespace ClanBattle.Mediator
 
         public DwarfHandler(List<IUnit> units) : base(units) { }
 
-        public override void HandleCommand(string command)
-        {
-            foreach (var unit in Units.Where(u => UnwrapUnitBase(u) is Dwarf).ToList())
-            {
-                if (IsSameLogicalUnit(unit, Leader))
-                    continue;
-
-                ProcessUnitAction(unit, command);
-            }
-
-            Next?.HandleCommand(command);
-        }
-
         public override void HandleRandomized()
         {
             string[] actions = { "вперед", "назад", "битися" };

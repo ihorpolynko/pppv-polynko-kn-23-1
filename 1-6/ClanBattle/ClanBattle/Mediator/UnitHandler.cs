@@ -91,8 +91,6 @@ namespace ClanBattle.Mediator
             return ua != null && ReferenceEquals(ua, ub);
         }
 
-        public abstract void HandleCommand(string command);
-
         public abstract void HandleRandomized();
     }
 }
